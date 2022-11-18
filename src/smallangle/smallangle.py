@@ -26,7 +26,7 @@ def sin(number):
     Prints dataframe
 
     Args:
-        number (INTEGER): integer value, determines amount of steps
+        number (INTEGER): determines the amount of steps taken
     """   
   
     x = np.linspace(0, 2 * pi, number)
@@ -50,7 +50,7 @@ def tan(number):
     Prints dataframe
 
     Args:
-        number (INTEGER): integer value, determines amount of steps
+        number (INTEGER): determines the amount of steps taken in the loop
     """    
     x = np.linspace(0, 2 * pi, number)
     df = pd.DataFrame({"x": x, "tan (x)": np.tan(x)})
