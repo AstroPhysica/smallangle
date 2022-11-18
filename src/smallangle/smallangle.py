@@ -4,13 +4,15 @@ from numpy import pi
 import pandas as pd
 
 
-#create the group for subcommando's
+#create the group for the subcommando's
 @click.group()
 def cmd_group():
+    """Function in which a group of commands can be executed depending on input command
+    """    
     pass
 
 
-#first subcomando: sin function
+#first subcomand: sin function
 #will run the function: sin(number) on command run_smallangle sin -n <number>
 @cmd_group.command()
 @click.option(
