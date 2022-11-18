@@ -6,6 +6,9 @@ authors = ["AnneliesVlaar <66774020+AnneliesVlaar@users.noreply.github.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
+click = "^8.1.3"
+numpy = "^1.23.4"
+pandas = "^1.5.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
@@ -13,3 +16,6 @@ pytest = "^5.2"
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+run_smallangle = "smallangle.smallangle:cmd_group"
